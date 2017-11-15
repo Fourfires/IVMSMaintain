@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "系统管理";
+}
+
+<div class="page-header">
+    <button type="button" class="btn btn-primary">@Html.ActionLink("导入所有汇聚表站点信息", "ImportConverge", "SystemManage")</button>
+    <button type="button" class="btn btn-primary">@Html.ActionLink("格式化所有站点信息", "FormatAllStation", "SystemManage")</button>
+</div>
+
+

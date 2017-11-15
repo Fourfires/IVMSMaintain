@@ -25,7 +25,12 @@ namespace IVMSMaintain
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/animate.css",
+                      "~/Content/app.css",
+                      "~/Content/font.css",
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/simple-line-icons.css"));
         }
     }
 }

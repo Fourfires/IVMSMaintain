@@ -1,7 +1,22 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<script src="~/Scripts/Parser.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    var str = ">程序员最 傻逼 的事情就是：重复造轮子。我们不需要造轮子，我们应该将我们的聪明才智发挥到其他更 牛逼 的创意上去。所以，我们做了 Code4App。Code4App 是一个移动平台的代码库。Code4App 收集了 iOS 平台上千份代码，并且配有效果图和演示视频。这些代码都经过我们的严格测试，你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的 UI 设计灵感。记住，永远不要重复造轮子。除非，你觉得你的轮子比世界上所有的轮子都牛逼。OK，请把你造出的牛逼的轮子分享给我们，分享给其他 苦逼 的程序员吧。Code4App 向创造并分享这些开源代码的的程序员致以最崇高的敬意。## 完整项目 这是一个native iOS Messenger应用程序，进行实时聊天对话和音频电话，离线支持。[Messenger](http://www.code4app.com/thread-11455-1-1.html) 【star：2100】react - native - nba - app。react - native - nba - app](http://www.code4app.com/thread-11223-1-1.html) 【star：1100】"
+    window.onload = function (){
+        var parser = new HyperDown,
+        html = parser.makeHtml(str);
+        console.dir(html);
+        document.getElementById("doc").innerHTML = html;
+    }
+  
+</script>
+<div id ="doc">
+    
+</div>
